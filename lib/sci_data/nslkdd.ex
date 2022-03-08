@@ -21,6 +21,9 @@ defmodule Scidata.NSLKDD do
     {download_features(@train_features_file), download_labels(@train_labels_file)}
   end
 
+  @doc """
+  Downloads the NSL-KDD test dataset or fetches it locally.
+  """
   def download_test do
     {download_features(@test_features_file), download_labels(@test_labels_file)}
   end

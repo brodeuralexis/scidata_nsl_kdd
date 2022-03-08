@@ -1,6 +1,6 @@
 # SciData.NSLKDD
 
-**TODO: Add description**
+Adds support for the NSL-KDD dataset to [`Scidata`](https://github.com/elixir-nx/scidata).
 
 ## Installation
 
@@ -18,4 +18,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/scidata_nsl_kdd>.
-
