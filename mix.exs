@@ -4,7 +4,7 @@ defmodule Scidata.NSLKDD.MixProject do
   def project do
     [
       app: :scidata_nsl_kdd,
-      version: "0.1.0",
+      version: "0.1.1",
       source_url: "https://github.com/brodeuralexis/scidata_nsl_kdd",
       homepage_url: "https://github.com/brodeuralexis/scidata_nsl_kdd",
       elixir: "~> 1.13",

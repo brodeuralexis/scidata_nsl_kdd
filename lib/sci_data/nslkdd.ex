@@ -4,6 +4,7 @@ defmodule Scidata.NSLKDD do
   """
 
   alias Scidata.Utils
+  alias Scidata.NSLKDD.Meta
 
   @base_url "https://github.com/brodeuralexis/scidata_nsl_kdd/raw/data-processing/NSL-KDD/"
   @train_features_file "NSL-KDD-Train-Features.gz"
@@ -27,6 +28,26 @@ defmodule Scidata.NSLKDD do
   def download_test do
     {download_features(@test_features_file), download_labels(@test_labels_file)}
   end
+
+  defdelegate fields(), to: Meta
+
+  defdelegate field(arg), to: Meta
+
+  defdelegate protocol_types(), to: Meta
+
+  defdelegate protocol_type(arg), to: Meta
+
+  defdelegate services(), to: Meta
+
+  defdelegate service(arg), to: Meta
+
+  defdelegate flags(), to: Meta
+
+  defdelegate flag(arg), to: Meta
+
+  defdelegate classes(), to: Meta
+
+  defdelegate class(arg), to: Meta
 
   defp download_features(features_file) do
     data = Utils.get!(@base_url <> features_file).body
